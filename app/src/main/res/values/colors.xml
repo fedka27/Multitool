@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#FF032644</color>
+    <color name="colorPrimaryDark">#FF030810</color>
+    <color name="colorAccent">#FF009DEB</color>
+    <color name="colorAccentPressed">#0089CC</color>
+    <color name="colorAccentRipple">@color/colorPrimary</color>
+
+    <color name="colorAccentSecondary">#FFFF7613</color>
+    <color name="colorAccentSecondaryPressed">#EB6C10</color>
+    <color name="colorAccentSecondaryRipple">#97460B</color>
+    <color name="colorDisabled">#7E7E7E</color>
+
+    <color name="titleColor">#FFFFFF</color>
+    <color name="editableFieldColor">#3D009DEB</color>
+    <color name="bottomBehaviourMenu">#00537C</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorInverse">#000000</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="dividerColor">#FF020B15</color>
+    <color name="dividerColorSecondary">#FF07487A</color>
+    <color name="dividerColorLight">#FF009DEB</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonTextColorInverse">#000000</color>
+    <color name="buttonBackgroundColor">#3D0089EB</color>
+    <color name="buttonBackgroundColorSecondary">@color/colorAccentSecondary</color>
+    <color name="toolbarBackgroundColor">@color/colorPrimary</color>
+    <color name="toolbarBackgroundColorDark">#031F36</color>
+
+    <color name="bottomBarBackgroundColor">@null</color>
+    <color name="listItemBackgroundColor">#FF061E39</color>
+    <color name="listItemBackgroundColorSecond">#140089EB</color>
+    <color name="screenBackground">#FF061E39</color>
+    <color name="screenBackgroundSecond">#FF041324</color>
+    <color name="dialogBackground">@color/screenBackground</color>
+    <color name="drawerButtonTextColorPressed">#FFFFFFFF</color>
+    <color name="drawerButtonTextColorNormal">#FFFFFF</color>
+    <color name="drawerButtonBackgroundPressed">#FF009DEB</color>
+    <color name="splashBackgroundColor">#FF061E39</color>
+    <color name="searchViewBackgroundColor">#3D0089EB</color>
+    <color name="showMoreButtonColor">#FF13B1FF</color>
+
+    <color name="searchGroupBackground">#33139DFF</color>
+
+    <!--Without attrs-->
+    <color name="splashTextColor">#FF009DEB</color>
+
+    <color name="status_item_free">#51A9DB</color>
+    <color name="status_item_completed">#FF00B86B</color>
+
+    <color name="stateProgressBarTextColorEnabled">#FFFFFF</color>
+    <color name="stateProgressBarTextColorDisabled">#FFFFFF</color>
+    <color name="stateProgressBarDescriptionColorEnabled">#FFFFFF</color>
+    <color name="stateProgressBarDescriptionColorDisabled">#FF043C63</color>
+    <color name="stateProgressBarColorEnabled">@color/colorAccent</color>
+    <color name="stateProgressBarColorDisabled">@color/colorPrimary</color>
+
+    <color name="service_lane_top_navigation_background">#4D000000</color>
+
+    <color name="tag_color">#4D139DFF</color>
+
+    <!--Free state-->
+    <color name="colorLaneFreeLight">#4D009DEB</color>
+    <color name="colorLaneFreeDark">#4D0072C4</color>
+
+    <!--Busy-->
+    <color name="colorBusy">#F5009DEB</color>
+    <color name="colorBusyLight">#FF0072C4</color>
+    <color name="colorBusyDark">@color/colorBusy</color>
+
+    <!--Waiting-->
+    <color name="colorWaiting">#E6FF8C3A</color>
+    <color name="colorWaitingDark">#E6EB6200</color>
+    <color name="colorWaitingLight">#E6FF8C3A</color>
+
+    <!--Expired-->
+    <color name="colorExpired">#E6E53935</color>
+    <color name="colorExpiredLight">#E6EF5350</color>
+    <color name="colorExpiredDark">#E6E53935</color>
+
+    <!--Complete statuses-->
+    <color name="stateCompleted">#65A500</color>
+    <color name="stateNotCompleted">#FFE53935</color>
+
+    <!--HistoryItem-->
+    <color name="historyTabIndicatorColor">#FFFFFF</color>
+    <color name="historyTabTextColor">#99FFFFFF</color>
+    <color name="historyItemColorStart">#660072C4</color>
+    <color name="historyItemColorEnd">#66009DEB</color>
+    <color name="historyItemOfflineColor">#FF139DFF</color>
+
+    <color name="white_transparent">#A3FFFFFF</color>
+
+    <color name="removeItem">#E6E53935</color>
+    <color name="warn_background">#E6E53935</color>
+
 </resources>

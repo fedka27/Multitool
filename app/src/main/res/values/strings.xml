@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Multitool</string>
+    <string name="app_hider">App hider</string>
+    <string name="add_blocker">Add blocker</string>
+    <string name="sms_receiver">Sms Receiver</string>
+    <string name="enter_pin_code">Введите ваш пин-код</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter">Enter</string>
+    <string name="yours_pin_code">Yours pin-code</string>
 </resources>
