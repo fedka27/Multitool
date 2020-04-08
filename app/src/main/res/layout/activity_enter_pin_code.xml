@@ -24,9 +24,7 @@
                 app:title="@string/app_hider_toolbar"
                 app:navigationIcon="@mipmap/ic_go_back"
                 android:layout_weight="1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                style="@style/ParentContainer">
             </androidx.appcompat.widget.Toolbar>
             <ImageButton
                 android:id="@+id/image_setting"
@@ -43,7 +41,7 @@
             android:layout_below="@id/linear_layout_toolbar"
             android:gravity="center"
             style="@style/Text"
-            android:background="@color/colorBusyDark"/>
+            android:background="@color/colorAccentSecondary"/>
         <EditText
             android:id="@+id/edit_text_pin_code"
             android:layout_width="match_parent"
@@ -55,14 +53,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginStart="@dimen/spacing_small_large"
-            android:layout_marginEnd="@dimen/spacing_small_large"
+            style="@style/Text"
             android:layout_below="@id/edit_text_pin_code">
             <Button
                 android:id="@+id/button_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cancel"
+                android:background="@color/buttonBackgroundColor"
                 android:layout_marginRight="@dimen/spacing_small_large"
                 android:layout_weight="1"/>
 
@@ -71,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="@color/buttonBackgroundColor"
                 android:onClick="hideApp"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/spacing_small_large"

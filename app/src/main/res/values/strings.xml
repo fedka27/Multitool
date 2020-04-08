@@ -8,4 +8,9 @@
     <string name="enter">Enter</string>
     <string name="yours_pin_code">Yours pin-code</string>
     <string name="app_hider_toolbar">App Hider</string>
+    <string name="change_function">Выберете фунцию</string>
+    <string name="setting_app_hider">Setting app hider</string>
+    <string name="change_pin_code_for_apps">Change pin code for apps</string>
+    <string name="pin_to_open_hider_apps_input_your_phone">Pin to open hider apps(input your phone)</string>
+    <string name="pin_to_open_hider_apps">Pin to open hider apps</string>
 </resources>
