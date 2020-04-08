@@ -37,7 +37,7 @@
     <color name="drawerButtonTextColorNormal">#FFFFFF</color>
     <color name="drawerButtonBackgroundPressed">#FF009DEB</color>
     <color name="splashBackgroundColor">#FF061E39</color>
-    <color name="searchViewBackgroundColor">#3D0089EB</color>
+    <color name="primaryBackground">#3D0089EB</color>
     <color name="showMoreButtonColor">#FF13B1FF</color>
 
     <color name="searchGroupBackground">#33139DFF</color>

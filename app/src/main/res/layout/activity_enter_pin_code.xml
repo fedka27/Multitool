@@ -1,65 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/searchViewBackgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryBackground"
     android:orientation="vertical"
     tools:context=".EnterPinCode">
-    <LinearLayout
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/searchViewBackgroundColor"
-        android:paddingStart="@dimen/clickable_size_xsmall"
-        android:paddingEnd="@dimen/clickable_size_xsmall"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear_layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:title="@string/app_hider_toolbar"
+                app:navigationIcon="@mipmap/ic_go_back"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </androidx.appcompat.widget.Toolbar>
+            <ImageButton
+                android:id="@+id/image_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_setting"
+                android:src="@mipmap/ic_setting"/>
+        </LinearLayout>
         <TextView
+            android:id="@+id/text_view_pin_code"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/clickable_size_xlarge"
-            android:layout_gravity="bottom"
-            android:textStyle="bold"
-            android:background="@color/colorWaitingDark"
-            android:textSize="@dimen/font_medium_large"
-            android:gravity="center_vertical|center"
-            android:text="@string/yours_pin_code"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/searchViewBackgroundColor"
-        android:paddingStart="@dimen/clickable_size_xsmall"
-        android:paddingEnd="@dimen/clickable_size_xsmall"
-        android:layout_weight="1">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/enter_pin_code"
+            android:layout_height="@dimen/toolbar_size"
+            android:text="@string/enter_pin_code"
+            android:layout_below="@id/linear_layout_toolbar"
             android:gravity="center"
-            android:textStyle="bold"
-            android:background="@color/drawerButtonTextColorNormal"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/searchViewBackgroundColor"
-        android:layout_weight="1"
-        android:paddingStart="@dimen/clickable_size_xsmall"
-        android:paddingEnd="@dimen/clickable_size_xsmall"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/button_enter"
-            android:layout_width="wrap_content"
+            style="@style/Text"
+            android:background="@color/colorBusyDark"/>
+        <EditText
+            android:id="@+id/edit_text_pin_code"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/enter"/>
-        <Button
-            android:id="@+id/button_cancel"
-            android:layout_width="wrap_content"
+            android:hint="@string/enter_pin_code"
+            android:layout_below="@id/text_view_pin_code"
+            style="@style/Text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/cancel"/>
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/spacing_small_large"
+            android:layout_marginEnd="@dimen/spacing_small_large"
+            android:layout_below="@id/edit_text_pin_code">
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginRight="@dimen/spacing_small_large"
+                android:layout_weight="1"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="hideApp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/spacing_small_large"
+                android:text="@string/enter" />
+        </LinearLayout>
+    </RelativeLayout>
 
-</LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
