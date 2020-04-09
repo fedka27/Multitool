@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initListener() {
         button_app_hider.setOnClickListener { openDialogPinCode() }
+        button_add_blocker.setOnClickListener { openDialogPinCode() }
+        button_sms_receiver.setOnClickListener { openDialogPinCode() }
 
     }
     private fun openDialogPinCode(){
