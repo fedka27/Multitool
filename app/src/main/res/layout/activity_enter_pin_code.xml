@@ -12,36 +12,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:id="@+id/linear_layout_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolBar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:title="@string/app_hider_toolbar"
-                app:navigationIcon="@mipmap/ic_go_back"
-                android:layout_weight="1"
-                style="@style/ParentContainer">
-            </androidx.appcompat.widget.Toolbar>
-            <ImageButton
-                android:id="@+id/image_setting"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@mipmap/ic_setting"
-                android:src="@mipmap/ic_setting"/>
-        </LinearLayout>
+
         <TextView
             android:id="@+id/text_view_pin_code"
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_size"
             android:text="@string/enter_pin_code"
-            android:layout_below="@id/linear_layout_toolbar"
             android:gravity="center"
             style="@style/Text"
-            android:background="@color/colorAccentSecondary"/>
+            android:background="@color/colorAccent"/>
         <EditText
             android:id="@+id/edit_text_pin_code"
             android:layout_width="match_parent"
